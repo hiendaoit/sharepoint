@@ -25,11 +25,9 @@ export default class CrudWebPart extends BaseClientSideWebPart<ICrudWebPartProps
     const element: React.ReactElement<ICrudProps> = React.createElement(
       Crud,
       {
-        description: this.properties.description,
-        isDarkTheme: this._isDarkTheme,
-        environmentMessage: this._environmentMessage,
-        hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        userDisplayName: this.context.pageContext.user.displayName
+        description: this.properties.description,        
+        webURL:this.context.pageContext.web.absoluteUrl,
+        context:this.context
       }
     );
 
@@ -116,5 +114,6 @@ export default class CrudWebPart extends BaseClientSideWebPart<ICrudWebPartProps
         }
       ]
     };
-  }
+  } 
 }
+

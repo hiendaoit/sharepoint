@@ -31,6 +31,7 @@
   "localizedResources": {
     "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
     "MenuWebPartStrings": "lib/webparts/menu/loc/{locale}.js",
-    "CrudWebPartStrings": "lib/webparts/crud/loc/{locale}.js"
+    "CrudWebPartStrings": "lib/webparts/crud/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
   }
 }
